@@ -2,7 +2,8 @@ version: '3.8'
 
 services:
   frontend:
-    image: 103975337985.dkr.ecr.us-east-2.amazonaws.com/my-frontend-app:latest
+    image: 103975337985.dkr.ecr.us-east-2.amazonaws.com/deploysphere-frontend:latest
+
     ports:
       - "80:80"
     restart: always
@@ -10,7 +11,8 @@ services:
       - REACT_APP_BACKEND_URL=http://backend:8000/api
 
   backend:
-    image: 103975337985.dkr.ecr.us-east-2.amazonaws.com/my-backend-app:latest
+    image: 103975337985.dkr.ecr.us-east-2.amazonaws.com/deploysphere-backend:latest
+
     ports:
       - "8000:8000"
     environment:
