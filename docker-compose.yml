@@ -11,7 +11,7 @@ services:
       - REACT_APP_BACKEND_URL=http://18.224.69.172:8000/api/
 
   backend:
-    image: 103975337985.dkr.ecr.us-east-2.amazonaws.com/deploysphere-backend:v1.0.1
+    image: 103975337985.dkr.ecr.us-east-2.amazonaws.com/deploysphere-backend:latest
 
     ports:
       - "8000:8000"
