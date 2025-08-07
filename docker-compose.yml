@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   frontend:
-    image: 103975337985.dkr.ecr.us-east-2.amazonaws.com/deploysphere-frontend:latest
+    image: 103975337985.dkr.ecr.us-east-2.amazonaws.com/deploysphere-frontend:v1.0.1
 
     ports:
       - "80:80"
