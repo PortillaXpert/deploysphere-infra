@@ -8,7 +8,7 @@ services:
       - "80:80"
     restart: always
     environment:
-      - REACT_APP_BACKEND_URL=http://backend:8000/api
+      - REACT_APP_BACKEND_URL=http://18.224.69.172:8000/api/
 
   backend:
     image: 103975337985.dkr.ecr.us-east-2.amazonaws.com/deploysphere-backend:v1.0.1
@@ -22,7 +22,7 @@ services:
       MYSQL_HOST: db 
       MYSQL_PORT: 3306
       DJANGO_SECRET_KEY: "m%t7h7@st+=k0o23s)ao!gz+h48#zp-^8bzrl#*4s1o5uzs6=j"
-      DJANGO_ALLOWED_HOSTS: "*" 
+      DJANGO_ALLOWED_HOSTS: "18.224.69.172,backend, localhost, 127.0.0.1" 
       DJANGO_DEBUG: "False" 
 
     depends_on:
